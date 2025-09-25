@@ -6,4 +6,9 @@
     <dimen name="start_marginTop">100dp</dimen>
     <dimen name="editText_marginStart">50dp</dimen>
     <dimen name="editText_textSize">25sp</dimen>
+    <dimen name="between_marginTop">40dp</dimen>
+    <dimen name="bmi_marginStart">140dp</dimen>
+    <dimen name="classification_marginStart">30dp</dimen>
+    <dimen name="calculate_textSize">20sp</dimen>
+    <dimen name="calculate_marginTop">70dp</dimen>
 </resources>

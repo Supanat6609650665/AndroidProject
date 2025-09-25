@@ -43,4 +43,93 @@
             android:textSize="@dimen/editText_textSize" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_marginTop"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height_text"
+            android:textSize="@dimen/textView_textSize" />
+
+        <EditText
+            android:id="@+id/editText_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/editText_marginStart"
+            android:background="@drawable/edittext_border"
+            android:ems="4"
+            android:hint="@string/height_hint"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/editText_textSize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_marginTop"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bmi_text"
+            android:textSize="@dimen/textView_textSize"/>
+
+        <EditText
+            android:id="@+id/editText_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bmi_marginStart"
+            android:background="@drawable/edittext_border"
+            android:ems="4"
+            android:inputType="none"
+            android:textSize="@dimen/editText_textSize"
+            android:text="@string/bmi_editText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_marginTop"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/classification_text"
+            android:textSize="@dimen/textView_textSize"/>
+
+        <EditText
+            android:id="@+id/editText_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/classification_marginStart"
+            android:background="@drawable/edittext_border"
+            android:ems="4"
+            android:inputType="none"
+            android:textSize="@dimen/editText_textSize"
+            android:text="@string/classification_editText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/calculate_marginTop"
+        android:text="@string/calculate_text"
+        android:textSize="@dimen/calculate_textSize"
+        android:backgroundTint="@color/purple" />
+
 </LinearLayout>

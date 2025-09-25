@@ -2,5 +2,12 @@
     <string name="app_name">Body Mass Index</string>
     <string name="header_text">Body Mass Index</string>
     <string name="weight_text">Weight (kg)</string>
-    <string name="weight_hint">180</string>
+    <string name="weight_hint">60</string>
+    <string name="height_text">Height (cm)</string>
+    <string name="height_hint">180</string>
+    <string name="bmi_text">BMI</string>
+    <string name="bmi_editText">.........</string>
+    <string name="classification_text">Classification</string>
+    <string name="classification_editText">Normal</string>
+    <string name="calculate_text">Calculate</string>
 </resources>
