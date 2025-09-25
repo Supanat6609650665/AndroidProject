@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_marginTop">40dp</dimen>
+    <dimen name="header_textSize">30sp</dimen>
+    <dimen name="textView_textSize">25sp</dimen>
+    <dimen name="start_marginTop">100dp</dimen>
+    <dimen name="editText_marginStart">50dp</dimen>
+    <dimen name="editText_textSize">25sp</dimen>
+</resources>
