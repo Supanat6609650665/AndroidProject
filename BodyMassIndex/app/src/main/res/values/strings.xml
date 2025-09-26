@@ -10,4 +10,5 @@
     <string name="classification_text">Classification</string>
     <string name="classification_editText">Normal</string>
     <string name="calculate_text">Calculate</string>
+    <string name="matcher_not_match">You can\'t input more than 8 digits or 2 decimal points</string>
 </resources>
