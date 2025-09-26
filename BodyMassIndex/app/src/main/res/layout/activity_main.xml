@@ -93,7 +93,8 @@
             android:inputType="none"
             android:enabled="false"
             android:textSize="@dimen/editText_textSize"
-            android:text="@string/bmi_editText"/>
+            android:text="@string/bmi_editText"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -121,7 +122,8 @@
             android:inputType="none"
             android:enabled="false"
             android:textSize="@dimen/editText_textSize"
-            android:text="@string/classification_editText" />
+            android:text="@string/classification_editText"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <Button
