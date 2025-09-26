@@ -11,4 +11,14 @@
     <string name="classification_editText">Normal</string>
     <string name="calculate_text">Calculate</string>
     <string name="matcher_not_match">You can\'t input more than 8 digits or 2 decimal points</string>
+    <string name="not_input_weight">Please input weight</string>
+    <string name="not_input_height">Please input height</string>
+    <string name="class_severe_thinness">Severe Thinness</string>
+    <string name="class_moderate_thinness">Moderate Thinness</string>
+    <string name="class_mild_thinness">Mild Thinness</string>
+    <string name="class_normal">Normal</string>
+    <string name="class_overweight">Over\nweight</string>
+    <string name="class_obese_i">Obese Class I</string>
+    <string name="class_obese_ii">Obese Class II</string>
+    <string name="class_obese_iii">Obese Class III</string>
 </resources>

@@ -46,18 +46,62 @@ public class MainActivity extends AppCompatActivity {
 
         EditText editBMI = findViewById(R.id.editText_bmi);
 
+        EditText editClassification = findViewById(R.id.editText_classification);
+
         calBtn.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v){
-                double weight = Double.parseDouble(editWeight.getText().toString());
-                double heightCM = Double.parseDouble(editHeight.getText().toString());
+
+                String weightStr = editWeight.getText().toString();
+                String heightStr = editHeight.getText().toString();
+
+                if(weightStr.isEmpty()){
+                    Toast.makeText(MainActivity.this, getText(R.string.not_input_weight), Toast.LENGTH_SHORT).show();
+                    return;
+                }else if(heightStr.isEmpty()){
+                    Toast.makeText(MainActivity.this, getText(R.string.not_input_height), Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                double weight = Double.parseDouble(weightStr);
+                double heightCM = Double.parseDouble(heightStr);
+
+
                 double heightM = heightCM / 100;
                 double bmi = weight / (heightM*heightM);
                 double roundedBMI = (double)Math.round(bmi * 10) / 10;
                 formatter.setRoundingMode(RoundingMode.DOWN);
                 editBMI.setText(formatter.format(roundedBMI));
-                editBMI.setBackgroundResource(R.drawable.edittext_border_normal);
+
+                if(bmi <= 16.0){
+                    editClassification.setText(R.string.class_severe_thinness);
+                    editClassification.setBackgroundResource(R.drawable.edittext_border_red_medium);
+                }else if(bmi > 16.0 && bmi <= 17.0){
+                    editClassification.setText(R.string.class_moderate_thinness);
+                    editClassification.setBackgroundResource(R.drawable.edittext_border_red_low);
+                }else if(bmi > 17.0 && bmi <= 18.5){
+                    editClassification.setText(R.string.class_mild_thinness);
+                    editClassification.setBackgroundResource(R.drawable.edittext_border_yellow);
+                }else if(bmi > 18.5 && bmi <= 25.0){
+                    editClassification.setText(R.string.class_normal);
+                    editClassification.setBackgroundResource(R.drawable.edittext_border_normal);
+                }else if(bmi > 25.0 && bmi <= 30.0){
+                    editClassification.setText(R.string.class_overweight);
+                    editClassification.setBackgroundResource(R.drawable.edittext_border_yellow);
+                }else if(bmi > 30.0 && bmi <= 35.0){
+                    editClassification.setText(R.string.class_obese_i);
+                    editClassification.setBackgroundResource(R.drawable.edittext_border_red_low);
+                }else if(bmi > 35.0 && bmi <= 40.0){
+                    editClassification.setText(R.string.class_obese_ii);
+                    editClassification.setBackgroundResource(R.drawable.edittext_border_red_medium);
+                }else if(bmi > 40.0){
+                    editClassification.setText(R.string.class_obese_iii);
+                    editClassification.setBackgroundResource(R.drawable.edittext_border_red_high);
+                }
+
+
+
             }
         });
 
@@ -65,8 +109,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
-
-
 
 /*class DecimalDigitsInputFilter implements InputFilter {
     private Pattern mPattern;
@@ -110,7 +152,7 @@ class DecimalDigitsInputFilter implements InputFilter {
         Matcher matcher = mPattern.matcher(newText);
 
         if (!matcher.matches()) {
-            Toast.makeText(mContext, R.string.matcher_not_match, Toast.LENGTH_LONG).show();
+            Toast.makeText(mContext, R.string.matcher_not_match, Toast.LENGTH_SHORT).show();
             return "";
         }
 
