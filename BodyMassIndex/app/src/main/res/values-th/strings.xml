@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Body Mass Index</string>
+    <string name="header_text">ค่าดัชนีมวลกาย</string>
+    <string name="weight_text">นํ้าหนัก (กก)</string>
+    <string name="weight_hint">60</string>
+    <string name="height_text">ส่วนสูง (ซม)</string>
+    <string name="height_hint">180</string>
+    <string name="bmi_text">ค่าดัชนีมวลกาย</string>
+    <string name="bmi_editText">.........</string>
+    <string name="classification_text">อยู่ในเกณฑ์</string>
+    <string name="classification_editText">ปกติ</string>
+    <string name="calculate_text">คํานวณ</string>
+    <string name="matcher_not_match">ใส่ค่าได้ไม่เกิน 8 หลักเเละทศนิยมไม่เกิน 2 ตําเเหน่ง</string>
+    <string name="not_input_weight">ใส่ค่านํ้าหนัก</string>
+    <string name="not_input_height">ใส่ค่าส่วนสูง</string>
+    <string name="class_mild_thinness">ผอม</string>
+    <string name="class_normal">ปกติ</string>
+    <string name="class_severe_thinness">ผอมมาก</string>
+    <string name="class_moderate_thinness">ผอมปานกลาง</string>
+    <string name="class_overweight">นํ้าหนักเกิน</string>
+    <string name="class_obese_i">โรคอ้วนระดับที่ 1</string>
+    <string name="class_obese_ii">โรคอ้วนระดับที่ 2</string>
+    <string name="class_obese_iii">โรคอ้วนระดับที่ 3</string>
+</resources>
