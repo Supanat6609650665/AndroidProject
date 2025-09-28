@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/orange"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,7 +16,17 @@
         android:layout_marginTop="@dimen/header_marginTop"
         android:textSize="@dimen/header_textSize"
         android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:text="@string/header_text" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="@dimen/imageView_marginTop"
+        android:layout_gravity="center"
+        android:src="@drawable/img" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/weight_text"
+            android:textColor="@color/black"
             android:textSize="@dimen/textView_textSize" />
 
         <EditText
@@ -40,6 +52,7 @@
             android:ems="4"
             android:hint="@string/weight_hint"
             android:inputType="numberDecimal"
+            android:textColor="@color/black"
             android:textSize="@dimen/editText_textSize" />
     </LinearLayout>
 
@@ -55,6 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/height_text"
+            android:textColor="@color/black"
             android:textSize="@dimen/textView_textSize" />
 
         <EditText
@@ -66,6 +80,7 @@
             android:ems="4"
             android:hint="@string/height_hint"
             android:inputType="numberDecimal"
+            android:textColor="@color/black"
             android:textSize="@dimen/editText_textSize"/>
     </LinearLayout>
 
@@ -84,6 +99,7 @@
             android:maxWidth="@dimen/bmi_width"
             android:text="@string/bmi_text"
             android:layout_gravity="center"
+            android:textColor="@color/black"
             android:textSize="@dimen/textView_textSize"/>
 
         <EditText
@@ -97,8 +113,8 @@
             android:inputType="none"
             android:enabled="false"
             android:textSize="@dimen/editText_textSize"
-            android:text="@string/bmi_editText"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:text="@string/bmi_editText" />
 
     </LinearLayout>
 
@@ -116,6 +132,7 @@
             android:minWidth="@dimen/classification_width"
             android:maxWidth="@dimen/classification_width"
             android:text="@string/classification_text"
+            android:textColor="@color/black"
             android:textSize="@dimen/textView_textSize"/>
 
         <EditText
@@ -128,8 +145,8 @@
             android:inputType="none"
             android:enabled="false"
             android:textSize="@dimen/editText_textSize"
-            android:text="@string/classification_editText"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:text="@string/classification_editText" />
     </LinearLayout>
 
     <Button
@@ -140,6 +157,6 @@
         android:layout_marginTop="@dimen/calculate_marginTop"
         android:text="@string/calculate_text"
         android:textSize="@dimen/calculate_textSize"
-        android:backgroundTint="@color/purple" />
+        android:backgroundTint="@color/blue" />
 
 </LinearLayout>

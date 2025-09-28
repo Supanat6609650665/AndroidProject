@@ -3,7 +3,7 @@
     <dimen name="header_marginTop">40dp</dimen>
     <dimen name="header_textSize">30sp</dimen>
     <dimen name="textView_textSize">25sp</dimen>
-    <dimen name="start_marginTop">100dp</dimen>
+    <dimen name="start_marginTop">20dp</dimen>
     <dimen name="editText_marginStart">50dp</dimen>
     <dimen name="editText_textSize">25sp</dimen>
     <dimen name="between_marginTop">40dp</dimen>
@@ -13,6 +13,7 @@
     <dimen name="calculate_marginTop">70dp</dimen>
     <dimen name="textView_bmi_marginStart">58dp</dimen>
     <dimen name="bmi_width">150dp</dimen>
-    <dimen name="classification_width">152dp</dimen>
+    <dimen name="classification_width">160dp</dimen>
     <dimen name="textView_classification_marginStart">58dp</dimen>
+    <dimen name="imageView_marginTop">20dp</dimen>
 </resources>

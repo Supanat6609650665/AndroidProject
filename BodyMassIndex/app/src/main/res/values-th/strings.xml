@@ -7,7 +7,7 @@
     <string name="height_text">ส่วนสูง (ซม)</string>
     <string name="height_hint">180</string>
     <string name="bmi_text">ค่าดัชนีมวลกาย</string>
-    <string name="bmi_editText">.........</string>
+    <string name="bmi_editText">0.00</string>
     <string name="classification_text">อยู่ในเกณฑ์</string>
     <string name="classification_editText">ปกติ</string>
     <string name="calculate_text">คํานวณ</string>

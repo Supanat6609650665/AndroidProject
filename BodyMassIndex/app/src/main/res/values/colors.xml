@@ -8,4 +8,6 @@
     <color name="red_low">#E68383</color>
     <color name="red_medium">#DB2E2E</color>
     <color name="red_high">#6F1515</color>
+    <color name="orange">#F5A33E</color>
+    <color name="blue">#4A57B8</color>
 </resources>
