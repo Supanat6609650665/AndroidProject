@@ -73,13 +73,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/between_marginTop"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView_bmi"
-            android:layout_width="@dimen/bmi_width"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/textView_bmi_marginStart"
+            android:minWidth="@dimen/bmi_width"
+            android:maxWidth="@dimen/bmi_width"
             android:text="@string/bmi_text"
             android:layout_gravity="center"
             android:textSize="@dimen/textView_textSize"/>
@@ -104,14 +106,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/between_marginTop"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView_classification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/textView_classification_marginStart"
-            android:minWidth="150dp"
+            android:minWidth="@dimen/classification_width"
+            android:maxWidth="@dimen/classification_width"
             android:text="@string/classification_text"
             android:textSize="@dimen/textView_textSize"/>
 
